@@ -1,0 +1,29 @@
+# R specific
+.Rhistory
+.RData
+.Rproj.user/
+.Ruserdata
+.Rapp.history
+
+# RStudio files
+*.Rproj
+.Rproj.user/
+
+# Temporary files
+*.tmp
+*.swp
+*.swo
+*.DS_Store
+
+# Reports and cache
+*.html
+*.pdf
+*.docx
+docs/_book/
+cache/
+*.log
+
+# Package building
+*.tar.gz
+*.Rcheck/
+
