@@ -53,7 +53,8 @@ rmarkdown::render("docs/union_find_report.Rmd")
 
 ## Roadmap
 - [x] Implement Union-Find with tests and benchmarks
-- [ ] Add Dijkstra with benchmarks on large graphs
-- [ ] Implement DP algorithms (e.g., Knapsack)
+- [x] Add Dijkstra with tests and benchmarks
+- [ ] Implement DP algorithms (e.g., Knapsack, LCS)
 - [ ] Add String Processing (KMP, Rolling Hash)
+- [ ] Add Number Theory (Primes, Modular Arithmetic)
 - [ ] Expand reports with comparative analysis
