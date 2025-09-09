@@ -1,3 +1,10 @@
+![R](https://img.shields.io/badge/R-4.4.0-blue?logo=r)
+![C](https://img.shields.io/badge/C-99-blue?logo=c)
+![Pascal](https://img.shields.io/badge/Pascal-Delphi-orange?logo=delphi)
+![License](https://img.shields.io/github/license/celsomsilva/discord-cam-kick-bot)
+![Contributions welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg)
+
+
 # Algorithmic Benchmark Suite (R)
 
 
@@ -14,7 +21,7 @@ A framework for implementing and benchmarking **classical algorithms** in **R**,
 
 ```
 algorithmic-benchmark-suite-R/
-│── legacy_pascal/      # Pascal (5th-7th semester UERJ) – lists, trees, graphs
+│── legacy_pascal/      # Pascal (1th-5th-7th semester, UERJ university) – lists, trees, graphs
 │── legacy_c/           # C (8th semester) – pointers, sudoku, bitwise, classic algorithms
 │── modern_r/           # Implementations and benchmarks in R (Union-Find, Dijkstra, etc.)
 │   │── R/          	# R Code
@@ -60,6 +67,19 @@ From RStudio or command line:
 ```
 rmarkdown::render("docs/union_find_report.Rmd")
 ```
+
+## About the Author
+
+My background in R goes beyond algorithmic exercises.  
+During my MSc in Data Science and Analytics (São Paulo University - USP), I worked extensively with **advanced statistical modeling**, including:
+
+- **Hierarchical nonlinear mixed models (HLM3)**
+- **Box-Cox and Johnson transformations**
+- **Intraclass correlation (ICC) analysis**
+- **Full residual diagnostics and model validation**
+
+This project is not about statistics per se, but about **bridging that expertise with classical algorithmic benchmarks**.  
+In other words, if I can fit a nonlinear mixed-effects model with transformations in R, then implementing and benchmarking algorithms like **Union-Find, Dijkstra, or Segment Trees** is a natural and exciting extension.
 
 
 ## Roadmap
