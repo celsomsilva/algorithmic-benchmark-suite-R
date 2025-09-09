@@ -22,7 +22,11 @@ A framework for implementing and benchmarking **classical algorithms** in **R**,
 ```
 algorithmic-benchmark-suite-R/
 │── legacy_pascal/      # Pascal (1th-5th-7th semester, UERJ university) – lists, trees, graphs
+│   │── algorithms/
+│   │── easy/
 │── legacy_c/           # C (8th semester) – pointers, sudoku, bitwise, classic algorithms
+│   │── algorithms/
+│   │── easy/
 │── modern_r/           # Implementations and benchmarks in R (Union-Find, Dijkstra, etc.)
 │   │── R/          	# R Code
 │   │── tests/          # Automated tests
@@ -83,8 +87,8 @@ In other words, if I can fit a nonlinear mixed-effects model with transformation
 
 
 ## Roadmap
-- [x] Port classical algorithms from Pascal/C to R
-- [x] Implement Union-Find with tests and benchmarks
+- [ ] Port classical algorithms from Pascal/C to R
+- [ ] Implement Union-Find with tests and benchmarks
 - [ ] Add Dijkstra with tests and benchmarks
 - [ ] Implement DP algorithms (e.g., Knapsack, LCS)
 - [ ] Add String Processing (KMP, Rolling Hash)
