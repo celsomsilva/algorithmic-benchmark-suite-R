@@ -5,6 +5,20 @@
 .Ruserdata
 .Rapp.history
 
+# C specific
+*.o           
+*.out        
+*.exe       
+*.obj      
+*.dll    
+*.so         
+*.a         
+*.dSYM/  
+
+# Pascal specific
+*.ppu         
+
+
 # RStudio files
 *.Rproj
 .Rproj.user/
