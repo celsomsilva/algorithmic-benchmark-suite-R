@@ -1,7 +1,7 @@
 ![R](https://img.shields.io/badge/R-4.4.0-blue?logo=r)
 ![C](https://img.shields.io/badge/C-99-blue?logo=c)
 ![Pascal](https://img.shields.io/badge/Pascal-Delphi-orange?logo=delphi)
-![License](https://img.shields.io/github/license/celsomsilva/algorithmic-benchmark-suite-R)
+![License](https://img.shields.io/github/license/celsomsilva/algorithmic-benchmark-suite-R)(LICENSE)
 ![Contributions welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg)
 
 
@@ -151,11 +151,11 @@ I’m a Data Science and Analytics specialist (USP postgraduate) and Computer En
 
 My academic and professional background includes:
 
-* **Hierarchical nonlinear mixed models (HLM3)**
-* **Box-Cox and Johnson transformations**
-* **Intraclass correlation (ICC) analysis**
+* **Computation in general**
+* **Machine Learning**
+* **Hierarchical nonlinear mixed models (HLM3/HLM2)**, **Intraclass correlation (ICC)** and other topics about **HLM**
 * **Residual diagnostics and model validation**
-* **Deep Learning, NLP, and Reinforcement Learning (ongoing specialization)**
+* **Deep Learning, LLMs, and Reinforcement Learning (ongoing specialization)**
 
 This project bridges that statistical and ML expertise with **classical algorithmic benchmarks**, showing the **continuity from foundational algorithms to modern AI**.
 
