@@ -1,7 +1,7 @@
 ![R](https://img.shields.io/badge/R-4.4.0-blue?logo=r)
 ![C](https://img.shields.io/badge/C-99-blue?logo=c)
 ![Pascal](https://img.shields.io/badge/Pascal-Delphi-orange?logo=delphi)
-![License](https://img.shields.io/github/license/celsomsilva/algorithmic-benchmark-suite-R)(LICENSE)
+![License](https://img.shields.io/github/license/celsomsilva/algorithmic-benchmark-suite-R)
 ![Contributions welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg)
 
 
@@ -64,7 +64,7 @@ They are preserved as-is for **historical and educational purposes**.
 
 ```
 algorithmic-benchmark-suite-R/
-│── legacy\_pascal/           # Pascal code
+│── legacy_pascal/           # Pascal code
 │   │── raw/                 # Untouched originals
 │   │   │── algorithms/      # Core algorithms (trees, graphs, lists, etc.)
 │   │   │── easy/            # Small/basic exercises
@@ -74,7 +74,7 @@ algorithmic-benchmark-suite-R/
 │       │── easy/
 │       │── misc/
 │
-│── legacy\_c/                # C code (pointers, Sudoku, etc.)
+│── legacy_c/                # C code (pointers, Sudoku, etc.)
 │   │── raw/
 │   │   │── algorithms/
 │   │   │── easy/
@@ -84,7 +84,7 @@ algorithmic-benchmark-suite-R/
 │       │── easy/
 │       │── misc/
 │
-│── modern\_r/                # Implementations and benchmarks in R
+│── modern_r/                # Implementations and benchmarks in R
 │   │── R/                   # R code
 │   │── tests/               # Automated tests
 │   │── benchmarks/          # Performance benchmarks
