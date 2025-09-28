@@ -8,12 +8,16 @@
 
 # Algorithmic Benchmark Suite (R Language)
 
+A **benchmarking and reproducibility framework** for classical algorithms, designed to:
 
-A framework for implementing and benchmarking **classical algorithms** across time:
-from **Pascal** (early technological degree and university exercises) → **C** (pointer-heavy era) → **modern R** (testing, benchmarking, reporting).
+* Reconstruct legacy implementations (Pascal, C) into a **structured, modern workflow**.
+* Provide **cleaned, tested, and benchmarked versions in R**, enabling fair comparisons.
+* Preserve the **historical learning journey** of early 2000s coding exercises while upgrading them into a reproducible, extensible system.
 
-This repository documents not just algorithms, but also a **historical learning journey**:
-from legacy, low-level code written in the early 2000s, to modern reproducible benchmarks in R.
+This repository is both:
+
+* A **technical portfolio project**, demonstrating algorithmic engineering, code cleaning, and benchmarking.
+* A **historical archive**, showing the evolution from handwritten Pascal/C to modern reproducible R pipelines.
 
 
 ---
