@@ -157,8 +157,7 @@ My academic and professional background includes:
 
 * **Computation in general**
 * **Machine Learning**
-* **Hierarchical nonlinear mixed models (HLM3/HLM2)**, **Intraclass correlation (ICC)** and other topics about **HLM**
-* **Residual diagnostics and model validation**
+* **Statistical Machine Learning**
 * **Deep Learning, LLMs, and Reinforcement Learning (ongoing specialization)**
 
 This project bridges that statistical and ML expertise with **classical algorithmic benchmarks**, showing the **continuity from foundational algorithms to modern AI**.
