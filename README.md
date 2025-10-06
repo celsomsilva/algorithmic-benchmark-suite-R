@@ -141,7 +141,7 @@ source("benchmarks/benchmark_union_find.R")
 
 ### Generating Reports
 
-From RStudio or command line:
+From RStudio or the command line:
 
 ```
 rmarkdown::render("docs/union_find_report.Rmd")
