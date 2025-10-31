@@ -120,10 +120,16 @@ This way, both the **authentic student-era code** and the **readable/modernized 
 * RStudio (optional)
 * Packages: `testthat`, `microbenchmark`, `ggplot2`, `rmarkdown`
 
-Install dependencies:
+You can install all required R packages automatically by running the script:
 
 ```
-install.packages(c("testthat", "microbenchmark", "ggplot2", "rmarkdown"))
+Rscript install.R
+```
+
+Alternatively, you can install them manually:
+
+```
+install.packages(c("testthat", "microbenchmark", "ggplot2", "rmarkdown", "knitr"))
 ```
 
 ### Running Tests
