@@ -1,7 +1,6 @@
 ![R](https://img.shields.io/badge/R-4.4.0-blue?logo=r)
 ![C](https://img.shields.io/badge/C-99-blue?logo=c)
 ![Pascal](https://img.shields.io/badge/Pascal-Delphi-orange?logo=delphi)
-![License](https://img.shields.io/github/license/celsomsilva/algorithmic-benchmark-suite-R)
 ![Contributions welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg)
 
 
@@ -20,21 +19,10 @@ This repository is both:
 * A **historical archive**, showing the evolution from handwritten Pascal/C to modern reproducible R pipelines.
 
 
----
-
+--- 
 ## Project Status
 
-This repository is **work-in-progress**.  
-Current focus:  
-- Organizing and documenting legacy Pascal and C code  
-- Translating variable names and comments (Portuguese → English)  
-- Adding R benchmarks for Union-Find and Dijkstra  
-- Preparing detailed RMarkdown reports  
-
-Planned:  
-- Possible future integration with other languages (e.g., Java, Python) to broaden benchmarking comparisons 
-- More visual documentation (charts, diagrams, comparisons)  
-- Polishing `docs/` for a public-facing portfolio  
+This repository is **work-in-progress**. 
 
 ---
 
@@ -104,8 +92,8 @@ algorithmic-benchmark-suite-R/
 ### Legacy Code Organization
 
 
-- `raw/` → untouched original files (Pascal or C) 
-- `cleaned/` → same files with indentation fixes, translated variable names/comments, and minimal cleanup for readability  
+- `raw/` :  untouched original files (Pascal or C) 
+- `cleaned/` : same files with indentation fixes, translated variable names/comments, and minimal cleanup for readability  
 
 This way, both the **authentic student-era code** and the **readable/modernized version** are kept side by side.
 
@@ -122,26 +110,26 @@ This way, both the **authentic student-era code** and the **readable/modernized 
 
 You can install all required R packages automatically by running the script:
 
-```
+```r
 Rscript install.R
 ```
 
 Alternatively, you can install them manually:
 
-```
+```r
 install.packages(c("testthat", "microbenchmark", "ggplot2", "rmarkdown", "knitr"))
 ```
 
 ### Running Tests
 
-```
+```r
 library(testthat)
 test_dir("tests")
 ```
 
 ### Running Benchmarks
 
-```
+```r
 source("benchmarks/benchmark_union_find.R")
 ```
 
@@ -149,24 +137,19 @@ source("benchmarks/benchmark_union_find.R")
 
 From RStudio or the command line:
 
-```
+```r
 rmarkdown::render("docs/union_find_report.Rmd")
 ```
 
 ---
 
-## About the Author
+## Author
 
-I’m a Data Science and Analytics specialist (USP postgraduate) and Computer Engineer (UERJ) with a career spanning from **Pascal/C/Java roots** to **modern Machine Learning and AI**.
+This project was developed by an engineer and data scientist with a background in:
 
-My academic and professional background includes:
-
-* **Computation in general**
-* **Machine Learning**
-* **Statistical Machine Learning**
-* **Deep Learning, LLMs, and Reinforcement Learning (ongoing specialization)**
-
-This project bridges that statistical and ML expertise with **classical algorithmic benchmarks**, showing the **continuity from foundational algorithms to modern AI**.
+* Postgraduate degree in **Data Science and Analytics (USP)**
+* Bachelor's degree in **Computer Engineering (UERJ)**
+* Special interest in statistical models, interpretability, and applied AI
 
 ---
 
