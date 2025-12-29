@@ -1,16 +1,32 @@
-
 # Algorithmic Benchmark Suite (R)
 
-This repo gathers my old Pascal and C algorithm exercises (from the early 2000s) and rewrites them in R so I can benchmark everything side-by-side.
+A **benchmarking and reproducibility framework** for classical algorithms, built from real legacy code.
+
+This repository gathers my original Pascal and C algorithm exercises (written in the early 2000s) and turns them into a **structured, testable, and benchmarkable workflow in R**.
 
 The idea is simple:
 
-* keep the **original code** exactly as it was written back then,
-* clean and reorganize the parts that make sense,
-* reimplement the algorithms in R,
-* run tests and benchmarks to compare the versions.
+- keep the **original code** exactly as it was written back then,
+- clean and reorganize the parts that make sense,
+- reimplement the same algorithms in R,
+- run tests and benchmarks to compare correctness and performance.
 
-It’s part technical exercise, part historical archive.
+This project is both:
+
+- a **technical portfolio**, demonstrating algorithmic engineering, code cleaning, and benchmarking,
+- and a **historical archive**, showing the evolution from handwritten Pascal/C code to modern, reproducible R pipelines.
+
+
+---
+
+
+## Motivation
+
+This project was inspired by a job description I encountered on LinkedIn that emphasized **code reasoning, algorithmic benchmarking, correctness, and performance evaluation**.
+
+Rather than treating those requirements as an abstract checklist, I decided to turn them into a **concrete, long-term engineering project**: a structured framework for designing, testing, documenting, and benchmarking classical algorithms across different levels of abstraction and time.
+
+While the original motivation came from an industry role, the implementation and scope of this repository are entirely **author-driven**, focusing on reproducibility, clarity, and technical depth rather than interview-style solutions.
 
 ---
 
@@ -51,6 +67,7 @@ Some files have:
 * minimal comments
 
 I keep them untouched on purpose — they’re part of the story.
+
 
 ---
 
