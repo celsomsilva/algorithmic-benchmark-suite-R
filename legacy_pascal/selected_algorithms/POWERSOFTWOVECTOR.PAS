@@ -25,10 +25,12 @@ var
   i      : integer;
 
 begin
+  clrscr;
+
   { Fill the vector with powers of two }
   for i := 1 to 10 do
   begin
-    values[i] := 2 ** i;  { 2 raised to the power of i }
+    values[i] := 1 shl i;  { 2^i }
   end;
 
   { Print the vector in reverse order }
@@ -36,5 +38,8 @@ begin
   begin
     write(values[i], ', ');
   end;
+
+  readkey;
 end.
+
 
