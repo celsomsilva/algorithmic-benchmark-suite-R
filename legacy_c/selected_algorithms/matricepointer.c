@@ -1,5 +1,5 @@
 /*
- * ORIGINAL NAME: matrizponteiro.c
+ * ORIGINAL FILE: algorithmic-benchmark-suite-R/legacy_c/raw/matrizponteiro.c
  *
  *
  * Reads lines from standard input, stores them using pointers,

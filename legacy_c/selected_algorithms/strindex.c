@@ -1,5 +1,5 @@
 /*
- * ORIGINAL NAME: strindex.c
+ * ORIGINAL FILE: algorithmic-benchmark-suite-R/legacy_c/raw/strindex.c
  *
  * Searches for the first occurrence of substring t in string s.
  * Returns the starting index, or -1 if the substring is not found.

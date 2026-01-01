@@ -1,5 +1,5 @@
 /*
- * ORIGINAL NAME: buscabinaria.c
+ * ORIGINAL FILE: algorithmic-benchmark-suite-R/legacy_c/raw/buscabinaria.c
  *
  * Binary search implementation using bit shifting
  * instead of division or multiplication by 2.
