@@ -48,7 +48,7 @@ int main(int argc, char *argv[])
                     break;
 
                 default:
-                    printf("acha: illegal option %c\n", c);
+                    printf("find_line: illegal option %c\n", c);
                     argc = 0;
                     matches = -1;
                     break;
@@ -58,7 +58,11 @@ int main(int argc, char *argv[])
 
     if (argc != 1)
     {
-        printf("Usage: acha -x -n pattern\n");
+        puts("Usage: find_line -x -n pattern");
+	puts("  -x : print lines that do NOT match the pattern (invert match)");
+	puts("  -n : print line numbers before matching lines");
+	puts("  End with Ctrl+D (Linux/macOS) or Ctrl+Z + Enter (Windows)");
+
     }
     else
     {

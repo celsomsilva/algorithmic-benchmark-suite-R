@@ -18,6 +18,10 @@ int main(void)
     int values[] = {3, 0, 5, 1, 8, 9, 2, 4};
     int size = 8;
 
+    printf("ARRAY: [ ");
+    print_array(values, size);
+    printf("]\n");
+
     bubble_sort(values, size);
 
     printf("SORTED ARRAY: [ ");

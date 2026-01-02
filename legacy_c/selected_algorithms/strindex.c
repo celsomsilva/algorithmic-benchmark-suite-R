@@ -14,8 +14,8 @@ int strindex(char s[], char t[]);
 
 int main(void)
 {
-    char text[] = "O socorro chega em breve.";
-    char pattern[] = "o d";
+    char text[] = "The mother is so happy.";
+    char pattern[] = " s";
 
     printf("SUBSTRING FOUND AT POSITION: %d\n",
            strindex(text, pattern));
@@ -43,6 +43,6 @@ int strindex(char s[], char t[])
             return i;
     }
 
-    return -1;
+    return -1; 
 }
 

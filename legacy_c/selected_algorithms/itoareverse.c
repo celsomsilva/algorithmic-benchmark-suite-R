@@ -23,7 +23,8 @@ int main(void)
     int number = 1245;
 
     itoa(number, buffer);
-    printf("CONVERTED NUMBER: %s\n", buffer);
+
+    printf("NUMBER: %d (integer), CONVERTED NUMBER: %s (string)\n", number,buffer);
 
     return 0;
 }

@@ -12,7 +12,7 @@
 
 #include <stdio.h>
 
-/*
+/* 
  * set_bits:
  *   x  -> original value
  *   p  -> bit position (0-based, from right)
@@ -27,8 +27,8 @@ int main(void)
     unsigned y = 10;   /* 1010 */
     int p = 4;
     int n = 2;
-
-    printf("%u\n", set_bits(x, y, p, n));
+	
+    printf("Result: %u\n", set_bits(x, y, p, n));
     return 0;
 }
 

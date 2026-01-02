@@ -17,8 +17,9 @@ int count_bits_kernighan(unsigned x);
 int main(void)
 {
     unsigned value = 32;  /* 0010 0000 */
+    char bin[] = "0010 0000";
 
-    printf("Value: %u\n", value);
+    printf("Example value: %u (%s)\n", value,bin);
     printf("Bits set (shift method): %d\n", count_bits_shift(value));
     printf("Bits set (Kernighan method): %d\n", count_bits_kernighan(value));
 

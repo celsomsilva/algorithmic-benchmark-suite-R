@@ -33,9 +33,12 @@ int main(void)
     char *line_ptr[MAXLINES];
     int nlines;
 
+    puts("Write text lines; Ctrl+D(Linux) or Ctrl+Z + Enter (Windows) to finish:");
+    
     if ((nlines = read_lines(line_ptr, MAXLINES)) >= 0)
     {
         quick_sort(line_ptr, 0, nlines - 1);
+        puts("\nLines sorted:");
         write_lines(line_ptr, nlines);
         return 0;
     }

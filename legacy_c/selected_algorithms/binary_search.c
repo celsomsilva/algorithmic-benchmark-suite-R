@@ -1,59 +1,48 @@
 /*
  * ORIGINAL FILE: algorithmic-benchmark-suite-R/legacy_c/raw/buscabinaria.c
- *
- * Binary search implementation using bit shifting
- * instead of division or multiplication by 2.
- *
- * Educational example.
+ * binary search program
+ * using shift instead of division by 2
  */
+
 
 #include <stdio.h>
 
-/*
- * binary_search:
- * Searches for target in a sorted array.
- * Returns the index if found, or -1 otherwise.
- */
-int binary_search(int array[], int size, int target);
-
-int main(void)
+int main()
 {
-    int array[25];
     int i;
-    int target = 41;
+    int array[25];
+    int start = 0, end = 24;
+    int target = 41; // value to search
+    int mid;
 
-    /* Initialize array with odd numbers */
-    for (i = 0; i < 25; i++)
-        array[i] = i * 2 + 1;
-
-    i = binary_search(array, 25, target);
-
-    if (i >= 0)
-        printf("VALUE %d FOUND AT POSITION %d\n", target, i);
-    else
-        printf("VALUE %d NOT FOUND\n", target);
-
-    return 0;
-}
-
-int binary_search(int array[], int size, int target)
-{
-    int low = 0;
-    int high = size - 1;
-
-    while (low <= high)
+    // fill array with odd numbers
+    printf("[ ");
+    for (i = 0; i < 25; i++){
+        int element = i * 2 + 1;
+        array[i] = element;
+        if (i == 24){
+	   printf("%d]",element);
+	   break;
+	}
+        printf("%d, ", element);
+    }
+    // binary search
+    while (start <= end)
     {
-        /* midpoint using bit shift */
-        int mid = (low + high) >> 1;
+        mid = (start + end) >> 1; // shift instead of /2
 
         if (array[mid] == target)
-            return mid;
-        else if (array[mid] < target)
-            low = mid + 1;
+        {
+            printf("\nfound %d at position %d\n", target, mid);
+            return 0;
+        }
+
+        if (array[mid] < target)
+            start = mid + 1;
         else
-            high = mid - 1;
+            end = mid - 1;
     }
 
-    return -1;
+    printf("did not find %d\n", target);
+    return 0;
 }
-
