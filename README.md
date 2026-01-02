@@ -16,9 +16,7 @@ This project is both:
 - a **technical portfolio**, demonstrating algorithmic engineering, code cleaning, and benchmarking,
 - and a **historical archive**, showing the evolution from handwritten Pascal/C code to modern, reproducible R pipelines.
 
-
 ---
-
 
 ## Motivation
 
@@ -30,16 +28,10 @@ While the original motivation came from an industry role, the implementation and
 
 ---
 
-## Project Status
-
-Still evolving — I add things whenever I revisit old code or want to benchmark something new.
-
----
-
 ## What’s Inside
 
 * Original **Pascal** and **C** code (exactly as written in the early 2000s)
-* Cleaned/translated versions for readability
+* Curated and cleaned versions of selected algorithms for readability
 * Modern **R implementations**
 * Automated tests (`testthat`)
 * Benchmarks (`microbenchmark`)
@@ -59,7 +51,7 @@ Back then the workflow was:
 * indentation done manually
 * comments only if the professor demanded
 
-Some files have:
+Several files have (raw/ directory):
 
 * variable names in Portuguese
 * weird indentation
@@ -77,45 +69,31 @@ I keep them untouched on purpose — they’re part of the story.
 algorithmic-benchmark-suite-R/
   legacy_pascal/
     raw/
-      algorithms/
-      easy/
-      misc/
-    cleaned/
-      algorithms/
-      easy/
-      misc/
+    selected_algorithms/
 
   legacy_c/
     raw/
-      algorithms/
-      easy/
-      misc/
-    cleaned/
-      algorithms/
-      easy/
-      misc/
+    selected_algorithms/
 
   modern_r/
     R/
     tests/
     benchmarks/
 
-  docs/
+  docs/			# RMarkdown reports
   README.md
   .gitignore
   LICENSE
+  install.R
 ```
 
 ---
 
 ## How the Legacy Folders Work
 
-* **raw/** — original Pascal/C files exactly as they were
-* **cleaned/** — same files with:
+* **raw/** — all original Pascal/C files exactly as they were
+* **selected_algorithms/** — same files (only the selected files). Curated and cleaned versions of selected algorithms for readability.
 
-  * fixed indentation
-  * translated names/comments
-  * small readability improvements
 
 This keeps **authenticity** and **modern clarity** side by side.
 
@@ -127,7 +105,7 @@ This keeps **authenticity** and **modern clarity** side by side.
 
 * R ≥ 4.0
 * Optional: RStudio
-* Packages: `testthat`, `microbenchmark`, `ggplot2`, `rmarkdown`
+* Packages: `testthat`, `microbenchmark`, `rmarkdown`
 
 Install everything with:
 
@@ -141,9 +119,7 @@ Or install manually:
 install.packages(c(
   "testthat",
   "microbenchmark",
-  "ggplot2",
-  "rmarkdown",
-  "knitr"
+  "rmarkdown"
 ))
 ```
 
@@ -151,7 +127,7 @@ install.packages(c(
 
 ```r
 library(testthat)
-test_dir("tests")
+test_dir("modern_r/tests")
 ```
 
 ### Running Benchmarks
