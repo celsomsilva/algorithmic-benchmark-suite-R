@@ -1,0 +1,62 @@
+---
+title: "Binary Search: Correctness and Performance"
+output: html_document
+---
+
+## Overview
+
+Binary Search is a classical algorithm with logarithmic time complexity, O(log n),
+assuming a sorted input array.
+
+In this project, the algorithm is implemented explicitly in R, closely mirroring
+its original Pascal and C implementations, without relying on built-in helpers.
+
+---
+
+## Algorithm Description
+
+The algorithm maintains two boundaries (`start` and `end`) and repeatedly narrows
+the search interval by comparing the target value with the middle element.
+
+Integer arithmetic is used explicitly to compute the midpoint.
+
+---
+
+## Correctness
+
+Correctness is verified using automated tests covering:
+
+- empty arrays
+- single-element arrays
+- boundary values
+- missing elements
+- duplicated values
+
+These tests ensure predictable behavior across edge cases.
+
+---
+
+## Benchmark
+
+```{r}
+library(microbenchmark)
+source("../modern_r/R/binary_search.R")
+
+set.seed(42)
+array <- sort(sample(1:1000000, 100000))
+target <- array[50000]
+
+microbenchmark(
+  binary_search_custom = binary_search(array, target),
+  base_match = match(target, array),
+  times = 100
+)
+```
+
+---
+
+## Conclusion
+
+The custom implementation behaves correctly and exhibits logarithmic performance.
+While not intended to outperform optimized built-ins, it serves as a clear and
+reproducible baseline for algorithmic reasoning and benchmarking.

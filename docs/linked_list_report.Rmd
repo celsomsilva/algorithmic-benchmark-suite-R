@@ -1,0 +1,70 @@
+---
+title: "Linked List in R: Explicit Pointer Reasoning"
+output: html_document
+---
+
+## Overview
+
+Linked lists are a fundamental data structure commonly implemented in
+low-level languages using pointers.
+
+This report presents a manual implementation in R using explicit indices
+to simulate pointer behavior.
+
+---
+
+## Data Structure Design
+
+The list is represented by parallel vectors:
+
+- `value`: stores element values
+- `next`: stores the index of the next node
+- `head`: index of the first element
+- `free`: next free position
+
+This mirrors classical C implementations.
+
+---
+
+## Correctness
+
+Automated tests verify:
+
+- insertion at the front
+- traversal order
+- successful and unsuccessful searches
+- correct size tracking
+
+---
+
+## Benchmark
+
+```{r}
+library(microbenchmark)
+source("../modern_r/R/linked_list.R")
+
+n <- 1000
+
+microbenchmark(
+  linked_list_insert = {
+    ll <- linked_list_init(n)
+    for (i in 1:n) {
+      ll <- linked_list_insert_front(ll, i)
+    }
+  },
+  vector_prepend = {
+    v <- integer(0)
+    for (i in 1:n) {
+      v <- c(i, v)
+    }
+  },
+  
+  
+  times = 50
+)
+```
+
+## Conclusion
+
+This implementation demonstrates how pointer-based data structures can be emulated in a high-level language like R using explicit indexing. While native vectors outperform this approach in practice, the value of this exercise lies in exposing memory management, node traversal, and algorithmic design patterns commonly found in low-level languages such as C.
+

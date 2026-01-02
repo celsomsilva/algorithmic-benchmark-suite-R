@@ -1,0 +1,63 @@
+---
+title: "Bubble Sort: Algorithmic Reasoning and Cost"
+output: html_document
+---
+
+## Overview
+
+Bubble Sort is a simple comparison-based sorting algorithm with quadratic
+time complexity, O(n²).
+
+Although inefficient for large datasets, it is widely used for educational
+purposes due to its straightforward control flow.
+
+---
+
+## Algorithm Description
+
+The algorithm repeatedly traverses the array, swapping adjacent elements
+whenever they are out of order.
+
+This implementation mirrors a classic C version using explicit nested loops
+and a temporary variable for swapping.
+
+---
+
+## Correctness
+
+Automated tests verify:
+
+- empty vectors
+- single-element vectors
+- already sorted inputs
+- reverse-ordered inputs
+- duplicated values
+
+These tests ensure correctness despite the algorithm’s simplicity.
+
+---
+
+## Benchmark
+
+```{r}
+library(microbenchmark)
+source("../modern_r/R/bubble_sort.R")
+
+set.seed(42)
+array <- sample(1:1000, 100)
+
+microbenchmark(
+  bubble_sort_custom = bubble_sort(array),
+  base_sort = sort(array),
+  times = 50
+)
+```
+
+---
+
+## Conclusion
+
+Bubble Sort is not competitive with optimized sorting routines.
+Its value lies in exposing algorithmic cost, control flow, and the
+impact of quadratic complexity in practice.
+
