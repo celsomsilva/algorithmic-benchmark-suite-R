@@ -1,8 +1,8 @@
 # Unit tests with testthat
 
 library(testthat)
-#source("../R/binary_search.R") # OBS: when running from modern_r/R directory
-source("modern_r/R/binary_search.R") # if R Project is set at project root
+source("../R/binary_search.R") # OBS: when running from modern_r/R directory
+#source("modern_r/R/binary_search.R") # if R Project is set at project root
 
 test_that("binary search behaves like a classic implementation", {
 
