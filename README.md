@@ -1,65 +1,70 @@
 # Algorithmic Benchmark Suite (R)
 
-A **benchmarking and reproducibility framework** for classical algorithms, built from real legacy code.
+A **benchmarking and reproducibility framework** for classical algorithms,
+focused on explicit reasoning, correctness, and performance evaluation in R.
 
-This repository gathers my original Pascal and C algorithm exercises (written in the early 2000s) and turns them into a **structured, testable, and benchmarkable workflow in R**.
+This repository contains modern R implementations of classical algorithms,
+designed to be **testable, benchmarkable, and reproducible**.
+
+The implementations are conceptually inspired by legacy Pascal and C code
+written in the early 2000s, which is preserved separately as a historical
+reference.
 
 The idea is simple:
 
-- keep the **original code** exactly as it was written back then,
-- clean and reorganize the parts that make sense,
-- reimplement the same algorithms in R,
-- run tests and benchmarks to compare correctness and performance.
+- study classical algorithms through explicit implementations,
+- reimplement them in R without hiding logic behind helpers,
+- validate correctness with automated tests,
+- measure performance with reproducible benchmarks.
 
 This project is both:
 
-- a **technical portfolio**, demonstrating algorithmic engineering, code cleaning, and benchmarking,
-- and a **historical archive**, showing the evolution from handwritten Pascal/C code to modern, reproducible R pipelines.
+- a **technical portfolio**, demonstrating algorithmic engineering,
+  test automation, and benchmarking in R,
+- and a **modern engineering layer**, built on top of historical algorithmic training.
 
 ---
 
 ## Motivation
 
-This project was inspired by a job description I encountered on LinkedIn that emphasized **code reasoning, algorithmic benchmarking, correctness, and performance evaluation**.
+This project was inspired by a job description I encountered on LinkedIn that
+emphasized **code reasoning, algorithmic benchmarking, correctness, and
+performance evaluation**.
 
-Rather than treating those requirements as an abstract checklist, I decided to turn them into a **concrete, long-term engineering project**: a structured framework for designing, testing, documenting, and benchmarking classical algorithms across different levels of abstraction and time.
+Rather than treating those requirements as an abstract checklist, I decided
+to turn them into a **concrete engineering project**: a structured framework
+for designing, testing, documenting, and benchmarking classical algorithms in R.
 
-While the original motivation came from an industry role, the implementation and scope of this repository are entirely **author-driven**, focusing on reproducibility, clarity, and technical depth rather than interview-style solutions.
+While the original motivation came from an industry role, the scope and
+implementation of this repository are entirely **author-driven**, focusing on
+clarity, explicit reasoning, and reproducibility rather than interview-style
+solutions.
 
 ---
 
 ## What’s Inside
 
-* Original **Pascal** and **C** code (exactly as written in the early 2000s)
-* Curated and cleaned versions of selected algorithms for readability
-* Modern **R implementations**
-* Automated tests (`testthat`)
-* Benchmarks (`microbenchmark`)
-* Small RMarkdown reports
+- A small, curated subset of **Pascal/C source files** (`selected_algorithms/`)
+  used as direct conceptual references
+- Explicit **R implementations** of classical algorithms
+- Automated correctness tests (`testthat`)
+- Performance benchmarks (`microbenchmark`)
+- Reproducible reports (`RMarkdown`)
 
 ---
 
-## A Note About the Old Code
+## Legacy Code Reference
 
-Everything inside `legacy_pascal/raw` and `legacy_c/raw` is **pre-StackOverflow, pre-GPT, pre-Google, pre-autocomplete, pre-formatters**.
+This repository includes a minimal `selected_algorithms/` directory
+containing only the legacy Pascal and C files cleaned that are directly referenced
+by the R implementations.
 
-Back then the workflow was:
+The complete, unmodified and cleaned legacy archive is preserved separately at:
 
-* books
-* xerox copies
-* compilers yelling at you
-* indentation done manually
-* comments only if the professor demanded
+https://github.com/celsomsilva/algorithmic-legacy-code
 
-Several files have (raw/ directory):
-
-* variable names in Portuguese
-* weird indentation
-* multiple versions of the same algorithm (loop, recursion, `goto`…)
-* minimal comments
-
-I keep them untouched on purpose — they’re part of the story.
-
+All files in `selected_algorithms/` are included strictly for contextual
+reference. No algorithmic logic was altered.
 
 ---
 
@@ -67,20 +72,12 @@ I keep them untouched on purpose — they’re part of the story.
 
 ```
 algorithmic-benchmark-suite-R/
-  legacy_pascal/
-    raw/
-    selected_algorithms/
-
-  legacy_c/
-    raw/
-    selected_algorithms/
-
+  selected_algorithms/   # minimal legacy reference (Pascal/C)
   modern_r/
     R/
     tests/
     benchmarks/
-
-  docs/			# RMarkdown reports
+  docs/                  # RMarkdown reports
   README.md
   .gitignore
   LICENSE
@@ -89,31 +86,21 @@ algorithmic-benchmark-suite-R/
 
 ---
 
-## How the Legacy Folders Work
-
-* **raw/** — all original Pascal/C files exactly as they were
-* **selected_algorithms/** — same files (only the selected files). Curated and cleaned versions of selected algorithms for readability.
-
-
-This keeps **authenticity** and **modern clarity** side by side.
-
----
-
 ## Getting Started
 
 ### Requirements
 
-* R ≥ 4.0
-* Optional: RStudio
-* Packages: `testthat`, `microbenchmark`, `rmarkdown`
+- R ≥ 4.0
+- Optional: RStudio
+- Packages: `testthat`, `microbenchmark`, `rmarkdown`
 
-Install everything with:
+Install dependencies:
 
 ```r
 Rscript install.R
 ```
 
-Or install manually:
+Or manually:
 
 ```r
 install.packages(c(
@@ -133,7 +120,7 @@ test_dir("modern_r/tests")
 ### Running Benchmarks
 
 ```r
-source("benchmarks/benchmark_union_find.R")
+source("modern_r/benchmarks/benchmark_union_find.R")
 ```
 
 ### Generating Reports
