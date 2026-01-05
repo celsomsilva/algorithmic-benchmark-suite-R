@@ -1,1 +1,0 @@
-primeiro exercicio do livro do capitulo de apontadores de funçoes
