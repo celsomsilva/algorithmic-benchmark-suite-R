@@ -1,5 +1,9 @@
 # bubble sort implementation
-# performs an in-place style sort using explicit loops
+# This version follows the classical algorithm taught in introductory
+# programming courses and implemented in early Pascal and C code.
+#
+# The focus here is not performance, but explicit control flow and
+# algorithmic reasoning.
 
 bubble_sort <- function(array) {
   size <- length(array)

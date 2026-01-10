@@ -1,4 +1,5 @@
 # Algorithmic Benchmark Suite (R)
+
 > Java version of this repository: [Algorithmic Benchmark Suite (Java)](https://github.com/celsomsilva/algorithmic-benchmark-suite-java)
 
 A **benchmarking and reproducibility framework** for classical algorithms,
@@ -129,6 +130,13 @@ source("modern_r/benchmarks/benchmark_union_find.R")
 ```r
 rmarkdown::render("docs/union_find_report.Rmd")
 ```
+
+> 
+> 
+> If you prefer, the benchmarks can also be run directly from RStudio.
+> 
+> 
+
 
 ---
 
